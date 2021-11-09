@@ -34,6 +34,7 @@ function mousePressed() {
   }
 }
 function draw(){
+
   mic_button.mouseClicked(function(){
     objective = round(random(0,1024))
   })
@@ -43,7 +44,11 @@ function draw(){
   difference = abs(threshold-objective_level)
 
   background(0,255-difference,0)
-
+  textSize(25)
+  textAlign(0,0)
+  stroke(100,50,150)
+  strokeWeight(2)
+  text("Hum/whistle at the right frequency to get a green screen! Press button to reset random frequency.",10,50)
   /*
   let waveform = fft.waveform()
   fill(255);
