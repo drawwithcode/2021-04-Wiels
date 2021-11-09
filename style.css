@@ -6,3 +6,23 @@ html, body {
 canvas {
   display: block;
 }
+
+.pretty_button {
+  width: 200px;
+height: 50px;
+font-family: Impact, Charcoal, sans-serif;
+font-size: 16px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+color: blue;
+background-color: rgba(164,46,149,0.53);;
+border: 7px dotted #0DCB23;
+-webkit-box-shadow: 37px 32px 39px 14px rgba(67,255,82,0.95);
+box-shadow: 37px 32px 39px 14px rgba(67,255,82,0.95);
+}
