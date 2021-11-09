@@ -4,6 +4,7 @@ let objective
 let objective_level
 let difference
 let threshold = 230
+let boolean = 0
 
 function preload(){
 
@@ -25,7 +26,12 @@ function setup(){
 }
 
 function mousePressed() {
-  mic.start()
+  let second_condition = mouseX > width/3
+  let third_condition = mouseY > height/3
+  if(boolean == 0 && second_condition && third_condition){
+    boolean = 1
+    mic.start()
+  }
 }
 function draw(){
   mic_button.mouseClicked(function(){
